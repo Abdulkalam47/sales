@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-max-width {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: rgba(39, 34, 34, 0.3); /* Semi-transparent sky blue */
+  backdrop-filter: blur(10px); /* Glass effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  border-radius: 10px; /* Optional: Rounded corners for the glass effect */
+  position: fixed; /* Fixed position */
+  top: 0; /* Position at the top */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #fff; /* Brand name color */
+}
+
+.navbar-brand img {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.navbar-brand .brand-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.navbar-nav .nav-link-custom {
+  color: #fff !important;
+  text-decoration: none !important;
+  margin-right: 15px;
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.navbar-nav .nav-link-custom:last-child {
+  margin-right: 0;
+}
+
+.navbar-nav .nav-link-custom:hover {
+  color: #ffeb3b; /* Color on hover */
+  text-decoration: underline !important;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-brand img {
+    margin-right: 0;
+  }
+
+  .navbar-brand .brand-text {
+    margin-top: 5px;
+    font-size: 1.2rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link-custom {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+/* Add margin-top to body content to prevent overlap with fixed navbar */
+body {
+  margin-top: 80px; /* Adjust based on navbar height */
+}

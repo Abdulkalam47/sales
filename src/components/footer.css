@@ -1,0 +1,26 @@
+/* src/components/footer.css */
+.footer {
+  background: rgba(37, 38, 39, 0.5); /* Light white background with higher opacity */
+  backdrop-filter: blur(10px); /* Glass effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for the glass effect */
+  padding: 30px;
+  text-align: center;
+  position: relative; /* Position relative to its normal flow */
+  width: 100%; /* Full width */
+  color: #444; /* Updated text color */
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer .social-media-links a {
+  margin: 0 10px;
+  color: #444; /* Updated link color */ 
+  text-decoration: none;
+}
+
+.footer .social-media-links a:hover {
+  text-decoration: underline;
+}
